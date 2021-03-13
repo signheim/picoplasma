@@ -32,7 +32,8 @@ connection.
 Parts
 -----
   - Raspberry Pi Pico
-  - Pimoroni Unicorn Pack (https://shop.pimoroni.com/products/pico-unicorn-pack)
+  - Pimoroni Unicorn Pack
+    - https://shop.pimoroni.com/products/pico-unicorn-pack
 
 Wiring
 ------
