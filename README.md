@@ -2,8 +2,8 @@
 Plasma Generator for Raspberry Pi Pico with Pimoroni Unicorn Pack
 
 Based mainly on two great contributions about the plasma-effect
-https://www.bidouille.org/prog/plasma
-https://rosettacode.org/wiki/Plasma_effect#Python
+  - https://www.bidouille.org/prog/plasma
+  - https://rosettacode.org/wiki/Plasma_effect#Python
 
 How it works
 ------------
@@ -23,7 +23,7 @@ To get access to Pimoronis product specific librarys the Pi Pico
 needs to be flashed with a Package from Pimoroni that has
 the usual MicroPython on board plus the librarys for the
 Unicorn Pack and other stuff from Pimoroni.
-https://github.com/pimoroni/pimoroni-pico/releases
+  - https://github.com/pimoroni/pimoroni-pico/releases
 
 Save the 'picoplasma.py' as 'main.py'
 to the Pico to enable it without computer
