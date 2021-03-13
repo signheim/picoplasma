@@ -8,7 +8,7 @@ Based mainly on two great contributions about the plasma-effect
 How it works
 ------------
 Power up the Pi Pico with the Pimoroni Unicorn Pack installed.
-Plasma will immediately start on the LED matrix.
+The animated plasma-effect will immediately start on the LED matrix.
 
 Press A to cycle through 3 speeds
 Press B to hold the animation
