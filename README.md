@@ -1,19 +1,22 @@
-# PICOPLASMA
-Plasma Generator for Raspberry Pi Pico with Pimoroni Unicorn Pack
+# PICOPLASMA WITH MESSAGE
+Plasma Generator with scrolling for Raspberry Pi Pico with Pimoroni Unicorn Pack
 
-Based mainly on two great contributions about the plasma-effect
+Based mainly on two great contributions about the plasma-effect:
   - https://www.bidouille.org/prog/plasma
   - https://rosettacode.org/wiki/Plasma_effect#Python
+
+About the framebuffering I found a way in with the hekp of this project:
+  - https://github.com/harveysandiego/raspberry_pi_pico_micropython
 
 How it works
 ------------
 Power up the Pi Pico with the Pimoroni Unicorn Pack installed.
 The animated plasma-effect will immediately start on the LED matrix.
 
-Press A to cycle through 3 speeds
-Press B to hold the animation
-Press C to switch polychrome and monochrome
-Press D to cycle through 3 color modes
+  - Press A to cycle through 4 speeds: slow, medium, fast, stop, ...
+  - Press B to change the color scheme
+  - Press X to toggle the scrolling message on and off
+  - Press Y to switch between a number of messages
 
 Enjoy!
 
@@ -25,7 +28,7 @@ the usual MicroPython on board plus the librarys for the
 Unicorn Pack and other stuff from Pimoroni.
   - https://github.com/pimoroni/pimoroni-pico/releases
 
-Save the 'picoplasma.py' as 'main.py'
+Save the 'picoplasma-message.py' as 'main.py'
 to the Pico to enable it without computer
 connection.
 
