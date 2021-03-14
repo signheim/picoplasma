@@ -31,7 +31,10 @@ h = picounicorn.get_height()
 
 t = 0      # kind of time variable (don't need utime module, calculations make the pico slow enough)
 ti = 0.15  # increment for the time
-db = False # debouncer for the buttons
+da = False # debouncer for BUTTON_A
+db = False # debouncer for BUTTON_B
+dx = False # debouncer for BUTTON_X
+dy = False # debouncer for BUTTON_Y
 cm = 0     # the color mode, can be 0 (polychrome) or 1 (monochrome)
 tm = 1     # text mode
 wm = 0     # which message
@@ -138,12 +141,12 @@ while True:
     # Even if the plasma-effect is stopped it is calculated constantly in order to keep the animation-speed constant.
     # There are more elgant ways to keep up a constant-speed ... I know.
     if picounicorn.is_pressed(picounicorn.BUTTON_A):
-        if not db:
-            db = True
+        if not da:
+            da = True
             ti += 0.15
             if ti > 0.46:
                 ti = 0
-    else: db = False
+    else: da = False
     
     # Button B iterated through the color modes: rgb, gbr, brg, mono-blueish, mono-reddish, mono-greenish
     if picounicorn.is_pressed(picounicorn.BUTTON_B):
@@ -156,19 +159,19 @@ while True:
     # Button X switches the text-mode on and off. The framebuffer is still calculated and scrolled.
     # This keeps the animation-speed constant. There are more elgant ways to keep up a constant-speed ... I know.
     if picounicorn.is_pressed(picounicorn.BUTTON_X):
-        if not db:
-            db = True
+        if not dx:
+            dx = True
             tm += 1
             if tm > 1:
                 tm = 0
-    else: db = False
+    else: dx = False
     
     # Button Y changes the text. It cycles through all textes in the mes-array, regardless how many there are.
     # I did not test how long a text can be without slowing everything down. Would be interesting to know.
     if picounicorn.is_pressed(picounicorn.BUTTON_Y):
-        if not db:
-            db = True
+        if not dy:
+            dy = True
             wm += 1
             if wm >= len(mes):
                 wm = 0
-    else: db = False
+    else: dy = False
