@@ -1,5 +1,5 @@
 # PICOPLASMA WITH MESSAGE
-Plasma Generator with scrolling for Raspberry Pi Pico with Pimoroni Unicorn Pack
+Plasma Generator with scrolling messages for Raspberry Pi Pico with Pimoroni Unicorn Pack
 
 Based mainly on two great contributions about the plasma-effect:
   - https://www.bidouille.org/prog/plasma
